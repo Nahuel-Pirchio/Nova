@@ -1,0 +1,297 @@
+*{
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+:root{
+  --azul:#1b3846;
+  --madera: #c47d4f;
+  --blanco: #f8f8f869;
+}
+.home{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu{
+  z-index: 4;
+  margin-left: 5px;
+  width: 25px;
+  padding: 3px;
+  background-color: white;
+  height: 25px;
+  border-radius: 50%;
+  background-image: url(../iconos/menu2.svg);
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.menu-desktop{
+  display: flex;
+}
+.menu-desktop{
+ display: none;
+}
+.menu-phone--container{
+  top: 0;
+  z-index: 0;
+  left: 110%;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.856);
+}
+.menu-phone--container.is-active{
+  left: 0;
+}
+.menu-phones{
+  margin-top: 60px;
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.menu-phones a{
+  color: var(--madera);
+  font-size: 32px;
+  padding: 5px;
+  font-weight: 500;
+}
+.menu-phones li{
+  list-style: none;
+}
+.nova-header{
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  background-color: var(--azul);
+  padding: 10px 0;
+}
+.logo{
+  display: inline-block;
+  margin: 0 auto;
+  width: 120px;
+  height: 50px;
+  background-image: url(../logos/Logo\ Nova.jpg);
+  background-size: cover;
+}
+.banner{
+  position: relative;
+}
+.banner-description{
+  position: absolute;
+  bottom: 10px;
+  width: 230px;
+  margin: 5px;
+  padding: 10px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: #0e0d0d9d;
+  border-radius: 10px;
+  line-height: 16px;
+  color: white;
+  font-size: 17px;
+  text-align: left;
+}
+.wood{
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-image: url(../imagenes/madera-4-e1580502519574.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.button-proyects{
+  position: relative;
+  padding: 15px;
+  border: var(--blanco) 4px solid;
+  left: calc(50% - 109px);
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 20px;
+  color: white;
+  background-color: rgba(26, 24, 24, 0.459);
+  text-decoration: none;
+}
+.button-proyects span{
+  display: inline-block;
+  margin-left: 4px;
+  width: 10px;
+  height: 10px;
+  background-image: url(../iconos/arrow\ down.svg);
+  background-size: cover;
+  background-position: center;
+}
+.collection-melaminas{
+  margin: auto;
+  display: flex;
+  background-color: var(--azul);
+  justify-content: center;
+}
+.melaminas{
+  background-color: #1b3846;
+  padding: 20px;
+}
+.melamina-description{
+  margin: 20px auto;
+  max-width: 900px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.459);
+  padding: 10px;
+  border: 2px solid var(--madera);
+  border-radius: 15px;
+  font-weight: 600;
+  color: var(--madera);
+}
+.img-container{
+  height: 80px;
+  margin-top: 5px;
+  overflow: hidden;
+  border: 1px solid var(--madera);
+}
+.tools-container{
+  color: white;
+  text-align: left;
+  padding: 15px;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+.tools{
+  background-color: rgba(26, 24, 24, 0.863);
+}
+.nova-tools-container{
+  padding: 5px;
+  margin: 0 auto;
+  max-width: 470px;
+}
+.tool-element{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  background-color: #c47e4fa8;
+  border-radius: 20px;
+}
+.tool-description{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+  border: 2px;
+}
+.contact-container{
+  max-width: 900px;
+  margin: auto;
+}
+.contact{
+  background-color: var(--azul);
+  position: relative;
+  height: 200px;
+  padding: 10px;
+}
+.info-description{
+  max-width: 900px;
+  margin: auto;
+  color: var(--madera);
+  font-size: 15px;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.459);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
+.contact span{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.ubication{
+  font-size: 14px;
+  margin-left: 5px;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contact-ing{
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-image: url(../iconos/intagram2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.red{
+  display: flex;
+  align-items: center;
+}
+.direct-contact{
+  line-height: 20px;
+}
+
+
+
+.proyects-interior{
+  padding-top: 65px;
+}
+.proyect--title{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 60%;
+  border: solid 2px var(--azul);
+  margin: 10px auto;
+  text-align: center;
+  color: var(--azul);
+  font-weight: bold;
+  padding: 12px;
+  background-color: rgba(230, 222, 222, 0.897);
+  font-size: 30px;
+}
+.interior-description{
+  width: 75%;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 10px auto;
+  background-color: #c47d4f;
+  color: black;
+}
+.proyectos{
+  padding-top: 10px;
+  background-color: rgba(12, 12, 12, 0.863);
+}
+.proyects-container{
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  background-color: #1b3846;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.proyects{
+  padding: 10px;
+}
+.proyects img{
+  border-radius: 10px;
+  border: solid 2.5px var(--madera);
+  
+}
+.exterior-description{
+  width: 75%;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 10px auto;
+  background-color: #c47d4f;
+  color: black
+}

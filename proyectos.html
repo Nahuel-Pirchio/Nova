@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova</title>
+  <link rel="stylesheet" href="./estilos/style.css">
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <header class="nova-header">
+    <div class="menu-phone--container">
+      <div class="menu-phones">
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./proyectos.html">Proyectos</a>
+          </li>
+          <li>
+            <a href="#contact">Contacto</a>
+          </li>
+          <li>
+            <a href="#info">Info</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="home">
+      <i class="menu"></i>
+      <i class="logo"></i>
+    </section>
+  </header>
+  <section class="proyectos">
+    <div class="proyects-interior">
+      <h2 class="proyect--title">Interior</h2>
+      <p class="interior-description">A continuacion se muestran Muebles diseñados a medida a pedido del cliente para interiores.</p>
+      <div class="proyects-container">
+        <div class="proyects">
+          <img src="./Proyectos/proyecto1.jpeg" alt="" width="120px" height="100px">
+          <p class="description-proyect"></p>
+        </div>
+        <div class="proyects">
+          <img src="./Proyectos/proyecto2.jpeg" alt="" width="120px" height="100px">
+          <p class="description-proyect"></p>
+        </div>
+        <div class="proyects">
+          <img src="./Proyectos/proyecto3.jpeg" alt="" width="120px" height="100px">
+          <p class="description-proyect"></p>
+        </div>
+        <div class="proyects">
+          <img src="./Proyectos/proyecto4.jpeg" alt="" width="120px" height="100px">
+          <p class="description-proyect"></p>
+        </div>
+        <div class="proyects">
+          <img src="./Proyectos/proyecto5.jpeg" alt="" width="120px" height="100px">
+          <p class="description-proyect"></p>
+        </div>
+        <div class="proyects">
+          <img src="./Proyectos/proyecto6.jpeg" alt="" width="120px" height="100px">
+          <p class="description-proyect"></p>
+        </div>
+        <div class="proyects">
+          <img src="./Proyectos/proyecto7.jpeg" alt="" width="120px" height="100px">
+          <p class="description-proyect"></p>
+        </div>
+        <div class="proyects">
+          <img src="./Proyectos/proyecto8.jpeg" alt="" width="120px" height="100px">
+          <p class="description-proyect"></p>
+        </div>
+    </div>
+    <div class="proyects-exterior">
+      <h2 class="proyect--title"> Exterior</h2>
+      <p class="exterior-description">En esta seccion mostramos proyectos en madera diseñados para exterior.</p>
+      <div class="proyects-container">
+        <div class="proyects">
+          <img src="./Proyectos/camastros1.jpeg" alt="" width="120px" height="100px">
+          <p class="description-proyect"></p>
+        </div>
+        <div class="proyects">
+          <img src="./Proyectos/camastros2.jpeg" alt="" width="120px" height="100px">
+          <p class="description-proyect"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    const menu_phone = document.querySelector('.menu-phone--container')
+    const menu = document.querySelector('.menu')
+    menu.addEventListener('click', hideShow)
+    function hideShow(){
+      if(menu_phone.classList.contains('is-active')){
+        menu_phone.classList.remove('is-active')
+      }
+      else{
+       menu_phone.classList.add('is-active')
+      }
+    }
+  </script>
+  
+</body>
+</html>

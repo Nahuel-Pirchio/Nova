@@ -1,0 +1,69 @@
+:root{
+  --azul:#1b3846;
+  --madera: #c47d4f;
+  --blanco: #f8f8f869;
+}
+.menu{
+  display: none;
+}
+.logo{
+  display: block;
+  margin: 0;
+}
+.home{
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.nova-header{
+  height: 75px;
+}
+.menu-phones{
+  display: none;
+}
+.menu-desktop{
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding: 6px;
+  list-style: none;
+  font-size: 20px;
+  color: var(--madera);
+  font-weight: 500;
+  text-decoration: none;
+}
+.menu-desktop ul{
+  display: flex;
+  justify-content: right;
+}
+.menu-desktop li{
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px white;
+  border-radius: 13px;
+  list-style: none;
+}
+.menu-desktop li:hover{
+  background-color: rgb(32, 26, 26);
+  transform: scale(1.2);
+  border: solid 2px var(--madera);
+  transition: 0.4s;
+}
+.menu-desktop a{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+.menu-desktop a:hover{
+  color: var(--madera);
+}
+.banner-description{
+  left: 50px
+}
+.button-proyects:hover{
+  transform: scale(1.4);
+  transition: 0.4s;
+  border: solid var(--madera);
+  background: rgb(32, 26, 26);
+  color: var(--madera);
+}

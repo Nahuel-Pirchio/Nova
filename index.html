@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova</title>
+  <link rel="stylesheet" href="./estilos/style.css">
+  <link rel="stylesheet" href="./estilos/tablet.css" media="(min-width: 720px)">
+  <link rel="stylesheet" href="./estilos/desktop.css" media="(min-width: 1024px)">
+</head>
+<body>
+    <header class="nova-header">
+      <div class="menu-phone--container">
+        <div class="menu-phones">
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./proyectos.html">Proyectos</a>
+            </li>
+            <li>
+              <a href="#contact">Contacto</a>
+            </li>
+            <li>
+              <a href="#info">Info</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="home">
+        <i class="menu"></i>
+        <i class="logo"></i>
+        <div class="menu-desktop">
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./proyectos.html">Proyectos</a>
+            </li>
+            <li>
+              <a href="#contact">Contacto</a>
+            </li>
+            <li>
+              <a href="#info">Info</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </header>
+    <section class="banner-container">
+      <div class="banner">
+        <div class="wood"></div>
+        <p class="banner-description">Nova se dedica al armado de muebles ya sea para interiores como para exteriores de hogares a pedido del cliente.</p>
+      </div>
+      <section class="melaminas">
+        <a href="./proyectos.html" class="button-proyects" target="blank">Conoce nuestros proyectos <span class="span"></span></a>
+        <p class="melamina-description">Nos encargamos del diseño y el armado de muebles con una amplia gama de enchapados en melaminas.</p>
+        <div class="collection-melaminas">
+          <div class="img-container">
+            <img src="./melaminas/blanco.webp" alt="" width="150px">
+          </div>
+          <div class="img-container">
+            <img src="./melaminas/helsinki.webp" alt="" width="150px">
+          </div>
+          <div class="img-container">
+            <img src="./melaminas/roble español.webp" alt="" width="150px">
+          </div>
+          <div class="img-container">
+            <img src="./melaminas/roble dakar.webp" alt="" width="150px">
+          </div>
+          <div class="img-container">
+            <img src="./melaminas/guayuvira.jpeg" alt="" width="150px">
+          </div>
+          <div class="img-container">
+            <img src="./melaminas/haya.webp" alt="" width="150px">
+          </div>
+          <div class="img-container">
+            <img src="./melaminas/nocce.jpg" alt="" width="150px">
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="tools">
+      <section class="nova-tools-container">
+        <div>
+            <p class="tools-container">Disponemos de herramientas adecuadas para instalar: </p>
+        </div>
+        <div class="tool-element">
+          <img src="./melaminas/bisagra2.jpeg" alt="bisagra" width="120px">
+          <p class="tool-description">Bisagras para puertas</p>
+        </div>
+        <div class="tool-element">
+          <img src="./melaminas/corredera.jpg" alt="correderas" width="120px">
+          <p class="tool-description">Correderas para cajones</p>
+        </div>
+        <div class="tool-element">
+          <img src="./melaminas/manijas.jpg" alt="manijas" width="120px">
+          <p class="tool-description">Manijas para puertas y cajones</p>
+        </div>
+      </section>
+    </section>
+    <section id="contact" class="contact">
+      <div class="contact-container">
+        <p class="info-description">Aqui encontrara toda la informacion si desea contactarnos para un futuro proyecto o pedir presupuesto.</p>
+        <div class="direct-contact">
+          <p class="ubication">Ubicacion: Cordoba-Olaeta</p>
+          <a href="contact-what" class="ubication">Telefono: +54 9 -358 5482083</a>
+          <div class="Red">
+            <p class="red-title ubication">Redes sociales:</p>
+            <a href="https://www.instagram.com/nova.maderas/" class="contact-ing"></a>
+          </div>
+        </div>
+      </div>
+      <span class="logo"></span>
+    </section>
+    <footer></footer>
+    <script>
+      const menu_phone = document.querySelector('.menu-phone--container')
+      const menu = document.querySelector('.menu')
+      menu.addEventListener('click', hideShow)
+      function hideShow(){
+        if(menu_phone.classList.contains('is-active')){
+          menu_phone.classList.remove('is-active')
+        }
+        else{
+         menu_phone.classList.add('is-active')
+        }
+      }
+    </script>
+</body>
+</html>
